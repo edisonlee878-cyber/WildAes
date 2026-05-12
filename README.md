@@ -21,14 +21,14 @@ python3 -m http.server 4173 --directory out
 3. 将分支设置为 `main`，目录设置为 `/docs`。
 4. 保存后等待 GitHub Pages 部署完成。
 
-当前静态页面已按项目型 Pages 地址构建：
+当前静态页面已按自定义域名根路径构建：
 
-- `https://edisonlee878-cyber.github.io/WildAes/`
+- `https://wildaes.com/`
 
 如需重新生成 `docs/`：
 
 ```bash
-NEXT_PUBLIC_SITE_BASE_PATH=/WildAes SITE_URL=https://edisonlee878-cyber.github.io/WildAes npm run build
+SITE_URL=https://wildaes.com npm run build
 rm -rf docs
 cp -R out docs
 ```
